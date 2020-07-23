@@ -1,22 +1,23 @@
 'use strict';
 
 
-var answerOne = confirm('Are you ready to rumble?');
+var name = prompt('Hello, what is your name');
+console.log('users name is ' + name);
+alert('Welcome to the Thunder Dome ' + name )
+
+var state = alert('Please answer the following questions with a yes or a no ');
+
+if (state){
+  console.log('Thank you')
+} 
+
+var answerOne = prompt('Do you think I like the rain?');
 console.log(answerOne);
-
-if (answerOne === true){
-  onmouseleave.log('lets get ready to rumble')
+if (answerOne === 'yes')  {
+  console.log('Wrong! I do not like the rain')
+}
+if (answerOne === 'no') {
+  console.log('Correct!! I do not like the rain');
 } else {
-  console.log('another time then');
-}
-
-var myBool = true;
-var anotherBool = false;
-var thirdBool = true;
-
-if (myBool && thirdBool) {
-  console.log('both are true');
-}
-else if (myBool || anotherBool) {
-  console.log('myBool OR anotherBool is true');
+  console.log('Please answer yes or no.')
 }

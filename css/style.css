@@ -1,3 +1,13 @@
 h1 {
-  color: red
+  color: red;
+  font-size: large;
+  font-style: italic;
+}
+h2 {
+  color: red;
+  font-size: medium;
+  font-style: italic;
+}
+li {
+list-style-type: disc;
 }
