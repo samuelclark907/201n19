@@ -77,7 +77,7 @@ if (lowerFive === 'yes' || lowerFive === 'y') {
   alert('Wrong I love me some bacon')
 } else if (lowerFive === 'no' || lowerFive === 'n') {
   //console.log('Correct I love to eat all meat.')
-  ('Correct I love to eat all meat.')
+  alert('Correct I love me some bacon.')
 } else {
   //console.log('Please answer yes or no');
   alert('Please answer yes or no');
