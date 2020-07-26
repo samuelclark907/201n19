@@ -5,11 +5,10 @@ var name = prompt('Hello, what is your name');
 console.log('users name is ' + name);
 alert('Welcome to the Thunder Dome ' + name)
 
-var state = alert('Please answer the following questions with a yes or a no ');
+var state = alert('Please answer the following questions with a yes or a no ') 
+var userPoints = 0
+  
 
-if (state) {
-  console.log('Thank you')
-}
 
 var answerOne = prompt('Do you think I like the rain?');
 var lowerOne = answerOne.toLowerCase();
@@ -20,6 +19,7 @@ if (lowerOne === 'yes' || lowerTwo === 'y') {
 } else if (lowerOne === 'no' || lowerOne === 'n') {
   //console.log('Correct! I do not like the rain')
   alert('Correct! I do not like the rain')
+  userPoints++
 } else {
   //console.log('Please answer yes or no');
   alert('Please answer yes or no');
@@ -36,6 +36,7 @@ if (lowerTwo === 'yes' || lowerTwo === 'y') {
 } else if (lowerTwo === 'no' || lowerTwo === 'n') {
   //console.log('Correct my favorite sweet is Sour Patch Kids.')
   alert('Correct my favorite sweet is Sour Patch Kids.')
+  userPoints++
 } else {
   //console.log('Please answer yes or no');
   alert('Please answer yes or no');
@@ -47,6 +48,7 @@ console.log(lowerThree);
 if (lowerThree === 'yes' || lowerThree === 'y') {
   //console.log('Correct I love driving fast')
   alert('Correct I love driving fast')
+  userPoints++
 } else if (lowerThree === 'no' || lowerThree === 'n') {
   //console.log('Wrong driving slow is for old people.')
   alert('Wrong driving slow is for old people.')
@@ -64,6 +66,7 @@ if (lowerFour === 'yes' || lowerFour === 'y') {
 } else if (lowerFour === 'no' || lowerFour === 'n') {
   //console.log('Correct I love the color red')
   alert('Correct I love the color red')
+  userPoints++
 } else {
   //console.log('Please answer yes or no');
   alert('Please answer yes or no');
@@ -78,10 +81,67 @@ if (lowerFive === 'yes' || lowerFive === 'y') {
 } else if (lowerFive === 'no' || lowerFive === 'n') {
   //console.log('Correct I love to eat all meat.')
   alert('Correct I love me some bacon.')
+  userPoints++
 } else {
   //console.log('Please answer yes or no');
   alert('Please answer yes or no');
 }
 
 alert('Thank you ' + name + ' for playing who wants to be a millionaire');
+
+//first question using loops
+
+var userAnswer = prompt('Im thinking of a number 1 through 10 can you guess it?');
+var userNumber = parseInt(userAnswer);
+var rightNumber = 5;
+var attempts = 0;
+var answerCorrect = false;
+
+
+while (attempts < 4) {
+  if (userNumber === rightNumber) {
+    alert('Correct');
+    attempts = 6;
+    userPoints++
+  }
+  else if (userNumber < rightNumber) {
+    userAnswer = prompt('Too low, please guess again');
+    userNumber = parseInt(userAnswer)
+    attempts++;
+  } else if ( userNumber > rightNumber) {
+    userAnswer = prompt('Too high, please guess again');
+    userNumber = parseInt(userAnswer)
+    attempts++;
+  }
+}
+if (attempts === 4) {
+  alert('Wrong again the answer is 5')
+}
+
+//2nd question using loops
+
+var secondAnswer = ['basketball', 'baseball', 'soccer'];
+var userSecond = prompt('What sport do you think I like?');
+//starting at 5 gives me 6 attempts
+var attempts = 0;
+
+while (attempts < 5) {
+  for (var i = 0; i < secondAnswer.length; i++) {
+    if (userSecond.toLowerCase() === secondAnswer[i]) {
+      alert('Correct! I like that sport.');
+      attempts = 8;
+      userPoints++
+    }
+  }
+  if (attempts < 5) {
+    userSecond = prompt('Wrong please guess again.').toLowerCase();
+    attempts++
+  }
+}
+  if (attempts === 5) {
+    alert('Wrong again? My favorite sports are basketball, baseball, and soccer')
+  }
+  //console.log(userPoints);
+  alert(`Good job you got ${userPoints} points out of 7`)
+
 
