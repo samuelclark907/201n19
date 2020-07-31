@@ -107,8 +107,7 @@ var userNumber = parseInt(userAnswer);
 var rightNumber = 5;
 var attempts = 0;
 
-
-
+function numero {
 while (attempts < 4) {
   if (userNumber === rightNumber) {
     alert('Correct');
@@ -128,6 +127,8 @@ while (attempts < 4) {
 if (attempts === 4) {
   alert('Wrong again the answer is 5');
 }
+}
+numero();
 
 //2nd question using loops
 
