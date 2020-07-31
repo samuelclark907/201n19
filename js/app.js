@@ -8,39 +8,41 @@ alert('Welcome to the Thunder Dome ' + nameGreeting);
 alert('Please answer the following questions with a yes or a no ');
 var userPoints = 0;
 
-
-
-var answerOne = prompt('Do you think I like the rain?');
-var lowerOne = answerOne.toLowerCase();
-console.log(lowerOne);
-if (lowerOne === 'yes' || lowerTwo === 'y') {
-  //console.log('Wrong! I do not like the rain')
-  alert('Wrong! I do not like the rain');
-} else if (lowerOne === 'no' || lowerOne === 'n') {
-  //console.log('Correct! I do not like the rain')
-  alert('Correct! I do not like the rain');
-  userPoints++;
-} else {
-  //console.log('Please answer yes or no');
-  alert('Please answer yes or no');
+function weather {
+  var answerOne = prompt('Do you think I like the rain?');
+  var lowerOne = answerOne.toLowerCase();
+  console.log(lowerOne);
+  if (lowerOne === 'yes' || lowerTwo === 'y') {
+    //console.log('Wrong! I do not like the rain')
+    alert('Wrong! I do not like the rain');
+  } else if (lowerOne === 'no' || lowerOne === 'n') {
+    //console.log('Correct! I do not like the rain')
+    alert('Correct! I do not like the rain');
+    userPoints++;
+  } else {
+    //console.log('Please answer yes or no');
+    alert('Please answer yes or no');
+  }
 }
+weather();
 
 
+  var answerTwo = prompt('Is chocolate my favorite sweet?');
+  var lowerTwo = answerTwo.toLowerCase();
+  console.log(lowerTwo);
+  if (lowerTwo === 'yes' || lowerTwo === 'y') {
+    //console.log('Im sorry thats incorrect, my favorite sweet is Sour Patch Kids')
+    alert('Im sorry thats incorrect, my favorite sweet is Sour Patch Kids');
+  } else if (lowerTwo === 'no' || lowerTwo === 'n') {
+    //console.log('Correct my favorite sweet is Sour Patch Kids.')
+    alert('Correct my favorite sweet is Sour Patch Kids.');
+    userPoints++;
+  } else {
+    //console.log('Please answer yes or no');
+    alert('Please answer yes or no');
+  }
 
-var answerTwo = prompt('Is chocolate my favorite sweet?');
-var lowerTwo = answerTwo.toLowerCase();
-console.log(lowerTwo);
-if (lowerTwo === 'yes' || lowerTwo === 'y') {
-  //console.log('Im sorry thats incorrect, my favorite sweet is Sour Patch Kids')
-  alert('Im sorry thats incorrect, my favorite sweet is Sour Patch Kids');
-} else if (lowerTwo === 'no' || lowerTwo === 'n') {
-  //console.log('Correct my favorite sweet is Sour Patch Kids.')
-  alert('Correct my favorite sweet is Sour Patch Kids.');
-  userPoints++;
-} else {
-  //console.log('Please answer yes or no');
-  alert('Please answer yes or no');
-}
+
 
 var answerThree = prompt('Do I like to drive fast?');
 var lowerThree = answerThree.toLowerCase();
@@ -56,6 +58,8 @@ if (lowerThree === 'yes' || lowerThree === 'y') {
   //console.log('Please answer yes or no');
   alert('Please answer yes or no');
 }
+
+
 
 var answerFour = prompt('Is my favorite color blue?');
 var lowerFour = answerFour.toLowerCase();
