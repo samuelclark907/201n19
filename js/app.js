@@ -44,7 +44,7 @@ function candy {
 }
 candy();
 
-
+function drive {
 var answerThree = prompt('Do I like to drive fast?');
 var lowerThree = answerThree.toLowerCase();
 console.log(lowerThree);
@@ -59,7 +59,8 @@ if (lowerThree === 'yes' || lowerThree === 'y') {
   //console.log('Please answer yes or no');
   alert('Please answer yes or no');
 }
-
+}
+drive();
 
 
 var answerFour = prompt('Is my favorite color blue?');
