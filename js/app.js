@@ -26,7 +26,7 @@ function weather {
 }
 weather();
 
-
+function candy {
   var answerTwo = prompt('Is chocolate my favorite sweet?');
   var lowerTwo = answerTwo.toLowerCase();
   console.log(lowerTwo);
@@ -41,7 +41,8 @@ weather();
     //console.log('Please answer yes or no');
     alert('Please answer yes or no');
   }
-
+}
+candy();
 
 
 var answerThree = prompt('Do I like to drive fast?');
