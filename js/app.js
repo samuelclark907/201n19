@@ -137,6 +137,7 @@ var userSecond = prompt('What sport do you think I like?');
 //starting at 5 gives me 6 attempts
 var secondAttempts = 0;
 
+function sport {
 while (secondAttempts < 5) {
   for (var i = 0; i < secondAnswer.length; i++) {
     if (userSecond.toLowerCase() === secondAnswer[i]) {
@@ -153,6 +154,8 @@ while (secondAttempts < 5) {
 if (secondAttempts === 5) {
   alert('Wrong again? My favorite sports are basketball, baseball, and soccer');
 }
+}
+sport();
 //console.log(userPoints);
 alert(`Good job you got ${userPoints} points out of 7`);
 
