@@ -8,11 +8,11 @@ alert('Welcome to the Thunder Dome ' + nameGreeting);
 alert('Please answer the following questions with a yes or a no ');
 var userPoints = 0;
 
-function weather {
+function weather() {
   var answerOne = prompt('Do you think I like the rain?');
   var lowerOne = answerOne.toLowerCase();
   console.log(lowerOne);
-  if (lowerOne === 'yes' || lowerTwo === 'y') {
+  if (lowerOne === 'yes' || lowerOne === 'y') {
     //console.log('Wrong! I do not like the rain')
     alert('Wrong! I do not like the rain');
   } else if (lowerOne === 'no' || lowerOne === 'n') {
@@ -26,7 +26,7 @@ function weather {
 }
 weather();
 
-function candy {
+function candy() {
   var answerTwo = prompt('Is chocolate my favorite sweet?');
   var lowerTwo = answerTwo.toLowerCase();
   console.log(lowerTwo);
@@ -44,7 +44,7 @@ function candy {
 }
 candy();
 
-function drive {
+function drive() {
   var answerThree = prompt('Do I like to drive fast?');
   var lowerThree = answerThree.toLowerCase();
   console.log(lowerThree);
@@ -62,7 +62,7 @@ function drive {
 }
 drive();
 
-function color {
+function color() {
   var answerFour = prompt('Is my favorite color blue?');
   var lowerFour = answerFour.toLowerCase();
   console.log(lowerFour);
@@ -80,21 +80,21 @@ function color {
 }
 color();
 
-function bacon {
-var answerFive = prompt('Am I a vegitarian?');
-var lowerFive = answerFive.toLowerCase();
-console.log(lowerFive);
-if (lowerFive === 'yes' || lowerFive === 'y') {
-  //console.log('Wrong I love me some bacon')
-  alert('Wrong I love me some bacon');
-} else if (lowerFive === 'no' || lowerFive === 'n') {
-  //console.log('Correct I love to eat all meat.')
-  alert('Correct I love me some bacon.');
-  userPoints++;
-} else {
-  //console.log('Please answer yes or no');
-  alert('Please answer yes or no');
-}
+function bacon() {
+  var answerFive = prompt('Am I a vegitarian?');
+  var lowerFive = answerFive.toLowerCase();
+  console.log(lowerFive);
+  if (lowerFive === 'yes' || lowerFive === 'y') {
+    //console.log('Wrong I love me some bacon')
+    alert('Wrong I love me some bacon');
+  } else if (lowerFive === 'no' || lowerFive === 'n') {
+    //console.log('Correct I love to eat all meat.')
+    alert('Correct I love me some bacon.');
+    userPoints++;
+  } else {
+    //console.log('Please answer yes or no');
+    alert('Please answer yes or no');
+  }
 }
 bacon();
 
@@ -107,26 +107,26 @@ var userNumber = parseInt(userAnswer);
 var rightNumber = 5;
 var attempts = 0;
 
-function numero {
-while (attempts < 4) {
-  if (userNumber === rightNumber) {
-    alert('Correct');
-    attempts = 6;
-    userPoints++;
+function numero() {
+  while (attempts < 4) {
+    if (userNumber === rightNumber) {
+      alert('Correct');
+      attempts = 6;
+      userPoints++;
+    }
+    else if (userNumber < rightNumber) {
+      userAnswer = prompt('Too low, please guess again');
+      userNumber = parseInt(userAnswer);
+      attempts++;
+    } else if (userNumber > rightNumber) {
+      userAnswer = prompt('Too high, please guess again');
+      userNumber = parseInt(userAnswer);
+      attempts++;
+    }
   }
-  else if (userNumber < rightNumber) {
-    userAnswer = prompt('Too low, please guess again');
-    userNumber = parseInt(userAnswer);
-    attempts++;
-  } else if (userNumber > rightNumber) {
-    userAnswer = prompt('Too high, please guess again');
-    userNumber = parseInt(userAnswer);
-    attempts++;
+  if (attempts === 4) {
+    alert('Wrong again the answer is 5');
   }
-}
-if (attempts === 4) {
-  alert('Wrong again the answer is 5');
-}
 }
 numero();
 
@@ -137,23 +137,23 @@ var userSecond = prompt('What sport do you think I like?');
 //starting at 5 gives me 6 attempts
 var secondAttempts = 0;
 
-function sport {
-while (secondAttempts < 5) {
-  for (var i = 0; i < secondAnswer.length; i++) {
-    if (userSecond.toLowerCase() === secondAnswer[i]) {
-      alert('Correct! I like that sport.');
-      secondAttempts = 8;
-      userPoints++;
+function sport() {
+  while (secondAttempts < 5) {
+    for (var i = 0; i < secondAnswer.length; i++) {
+      if (userSecond.toLowerCase() === secondAnswer[i]) {
+        alert('Correct! I like that sport.');
+        secondAttempts = 8;
+        userPoints++;
+      }
+    }
+    if (secondAttempts < 5) {
+      userSecond = prompt('Wrong please guess again.').toLowerCase();
+      secondAttempts++;
     }
   }
-  if (secondAttempts < 5) {
-    userSecond = prompt('Wrong please guess again.').toLowerCase();
-    secondAttempts++;
+  if (secondAttempts === 5) {
+    alert('Wrong again? My favorite sports are basketball, baseball, and soccer');
   }
-}
-if (secondAttempts === 5) {
-  alert('Wrong again? My favorite sports are basketball, baseball, and soccer');
-}
 }
 sport();
 //console.log(userPoints);
