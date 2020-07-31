@@ -5,9 +5,9 @@ var name = prompt('Hello, what is your name');
 console.log('users name is ' + name);
 alert('Welcome to the Thunder Dome ' + name)
 
-var state = alert('Please answer the following questions with a yes or a no ') 
+var state = alert('Please answer the following questions with a yes or a no ')
 var userPoints = 0
-  
+
 
 
 var answerOne = prompt('Do you think I like the rain?');
@@ -108,7 +108,7 @@ while (attempts < 4) {
     userAnswer = prompt('Too low, please guess again');
     userNumber = parseInt(userAnswer)
     attempts++;
-  } else if ( userNumber > rightNumber) {
+  } else if (userNumber > rightNumber) {
     userAnswer = prompt('Too high, please guess again');
     userNumber = parseInt(userAnswer)
     attempts++;
@@ -138,10 +138,10 @@ while (attempts < 5) {
     attempts++
   }
 }
-  if (attempts === 5) {
-    alert('Wrong again? My favorite sports are basketball, baseball, and soccer')
-  }
-  //console.log(userPoints);
-  alert(`Good job you got ${userPoints} points out of 7`)
+if (attempts === 5) {
+  alert('Wrong again? My favorite sports are basketball, baseball, and soccer')
+}
+//console.log(userPoints);
+alert(`Good job you got ${userPoints} points out of 7`)
 
 
