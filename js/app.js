@@ -45,38 +45,41 @@ function candy {
 candy();
 
 function drive {
-var answerThree = prompt('Do I like to drive fast?');
-var lowerThree = answerThree.toLowerCase();
-console.log(lowerThree);
-if (lowerThree === 'yes' || lowerThree === 'y') {
-  //console.log('Correct I love driving fast')
-  alert('Correct I love driving fast');
-  userPoints++;
-} else if (lowerThree === 'no' || lowerThree === 'n') {
-  //console.log('Wrong driving slow is for old people.')
-  alert('Wrong driving slow is for old people.');
-} else {
-  //console.log('Please answer yes or no');
-  alert('Please answer yes or no');
-}
+  var answerThree = prompt('Do I like to drive fast?');
+  var lowerThree = answerThree.toLowerCase();
+  console.log(lowerThree);
+  if (lowerThree === 'yes' || lowerThree === 'y') {
+    //console.log('Correct I love driving fast')
+    alert('Correct I love driving fast');
+    userPoints++;
+  } else if (lowerThree === 'no' || lowerThree === 'n') {
+    //console.log('Wrong driving slow is for old people.')
+    alert('Wrong driving slow is for old people.');
+  } else {
+    //console.log('Please answer yes or no');
+    alert('Please answer yes or no');
+  }
 }
 drive();
 
-
-var answerFour = prompt('Is my favorite color blue?');
-var lowerFour = answerFour.toLowerCase();
-console.log(lowerFour);
-if (lowerFour === 'yes' || lowerFour === 'y') {
-  //console.log('Wrong my favorite color is red')
-  alert('Wrong my favorite color is red');
-} else if (lowerFour === 'no' || lowerFour === 'n') {
-  //console.log('Correct I love the color red')
-  alert('Correct I love the color red');
-  userPoints++;
-} else {
-  //console.log('Please answer yes or no');
-  alert('Please answer yes or no');
+function color {
+  var answerFour = prompt('Is my favorite color blue?');
+  var lowerFour = answerFour.toLowerCase();
+  console.log(lowerFour);
+  if (lowerFour === 'yes' || lowerFour === 'y') {
+    //console.log('Wrong my favorite color is red')
+    alert('Wrong my favorite color is red');
+  } else if (lowerFour === 'no' || lowerFour === 'n') {
+    //console.log('Correct I love the color red')
+    alert('Correct I love the color red');
+    userPoints++;
+  } else {
+    //console.log('Please answer yes or no');
+    alert('Please answer yes or no');
+  }
 }
+color();
+
 
 var answerFive = prompt('Am I a vegitarian?');
 var lowerFive = answerFive.toLowerCase();
