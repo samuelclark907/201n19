@@ -80,7 +80,7 @@ function color {
 }
 color();
 
-
+function bacon {
 var answerFive = prompt('Am I a vegitarian?');
 var lowerFive = answerFive.toLowerCase();
 console.log(lowerFive);
@@ -95,6 +95,8 @@ if (lowerFive === 'yes' || lowerFive === 'y') {
   //console.log('Please answer yes or no');
   alert('Please answer yes or no');
 }
+}
+bacon();
 
 alert('Thank you ' + name + ' for playing who wants to be a millionaire');
 
