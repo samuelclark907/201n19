@@ -13,14 +13,14 @@ function weather() {
   var lowerOne = answerOne.toLowerCase();
   console.log(lowerOne);
   if (lowerOne === 'yes' || lowerOne === 'y') {
-    //console.log('Wrong! I do not like the rain')
+
     alert('Wrong! I do not like the rain');
   } else if (lowerOne === 'no' || lowerOne === 'n') {
-    //console.log('Correct! I do not like the rain')
+
     alert('Correct! I do not like the rain');
     userPoints++;
   } else {
-    //console.log('Please answer yes or no');
+
     alert('Please answer yes or no');
   }
 }
@@ -31,14 +31,14 @@ function candy() {
   var lowerTwo = answerTwo.toLowerCase();
   console.log(lowerTwo);
   if (lowerTwo === 'yes' || lowerTwo === 'y') {
-    //console.log('Im sorry thats incorrect, my favorite sweet is Sour Patch Kids')
+
     alert('Im sorry thats incorrect, my favorite sweet is Sour Patch Kids');
   } else if (lowerTwo === 'no' || lowerTwo === 'n') {
-    //console.log('Correct my favorite sweet is Sour Patch Kids.')
+
     alert('Correct my favorite sweet is Sour Patch Kids.');
     userPoints++;
   } else {
-    //console.log('Please answer yes or no');
+
     alert('Please answer yes or no');
   }
 }
@@ -49,14 +49,14 @@ function drive() {
   var lowerThree = answerThree.toLowerCase();
   console.log(lowerThree);
   if (lowerThree === 'yes' || lowerThree === 'y') {
-    //console.log('Correct I love driving fast')
+
     alert('Correct I love driving fast');
     userPoints++;
   } else if (lowerThree === 'no' || lowerThree === 'n') {
-    //console.log('Wrong driving slow is for old people.')
+
     alert('Wrong driving slow is for old people.');
   } else {
-    //console.log('Please answer yes or no');
+
     alert('Please answer yes or no');
   }
 }
@@ -67,14 +67,14 @@ function color() {
   var lowerFour = answerFour.toLowerCase();
   console.log(lowerFour);
   if (lowerFour === 'yes' || lowerFour === 'y') {
-    //console.log('Wrong my favorite color is red')
+
     alert('Wrong my favorite color is red');
   } else if (lowerFour === 'no' || lowerFour === 'n') {
-    //console.log('Correct I love the color red')
+
     alert('Correct I love the color red');
     userPoints++;
   } else {
-    //console.log('Please answer yes or no');
+
     alert('Please answer yes or no');
   }
 }
@@ -85,14 +85,14 @@ function bacon() {
   var lowerFive = answerFive.toLowerCase();
   console.log(lowerFive);
   if (lowerFive === 'yes' || lowerFive === 'y') {
-    //console.log('Wrong I love me some bacon')
+
     alert('Wrong I love me some bacon');
   } else if (lowerFive === 'no' || lowerFive === 'n') {
-    //console.log('Correct I love to eat all meat.')
+
     alert('Correct I love me some bacon.');
     userPoints++;
   } else {
-    //console.log('Please answer yes or no');
+
     alert('Please answer yes or no');
   }
 }
@@ -100,7 +100,7 @@ bacon();
 
 alert('Thank you ' + name + ' for playing who wants to be a millionaire');
 
-//first question using loops
+
 
 var userAnswer = prompt('Im thinking of a number 1 through 10 can you guess it?');
 var userNumber = parseInt(userAnswer);
@@ -130,11 +130,11 @@ function numero() {
 }
 numero();
 
-//2nd question using loops
+
 
 var secondAnswer = ['basketball', 'baseball', 'soccer'];
 var userSecond = prompt('What sport do you think I like?');
-//starting at 5 gives me 6 attempts
+
 var secondAttempts = 0;
 
 function sport() {
@@ -156,7 +156,7 @@ function sport() {
   }
 }
 sport();
-//console.log(userPoints);
+
 alert(`Good job you got ${userPoints} points out of 7`);
 
 
