@@ -6,17 +6,24 @@ h1 {
   margin-top: 50px;
   margin-bottom: 50px;
 }
+
 h2 {
   color: red;
   font-size: 50px;
   font-style: inherit ;
   text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
-li {
+
+i {
 list-style-type: disc;
 color:red;
 font-weight: bold;
 font-style: italic;
+text-align: center;
+margin-left:25px;
+margin-top: 25px;
 }
 
 p {
@@ -28,11 +35,12 @@ p {
   color:red
 }
 
-li {
-margin-left:25px;
-margin-top: 25px;
-}
 
 body {
   background-color: lime;
 }
+
+ol { 
+    margin-bottom: 30px;
+  }
+
