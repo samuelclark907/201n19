@@ -17,13 +17,13 @@ h2 {
 }
 
 li {
-list-style-type: disc;
-color:red;
-font-weight: bold;
-font-style: italic;
-text-align: center;
-margin-left:25px;
-margin-top: 25px;
+  list-style-type: disc;
+  color:red;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  margin-left:25px;
+  margin-top: 25px;
 }
 
 p {
